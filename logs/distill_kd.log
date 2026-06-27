@@ -1,0 +1,80 @@
+2026-05-01 12:16:16,254 - INFO - 🚀 训练设备: cuda
+2026-05-01 12:16:16,254 - INFO - 📌 训练参数: Namespace(teacher_preset='standard', teacher_lora_path='./output_standard/lora_standard_final.pt', model_name='HuggingFaceTB/SmolLM-135M', dataset_name='yahma/alpaca-cleaned', max_samples=1000, max_length=256, batch_size=2, learning_rate=2e-05, num_epochs=5, temperature=1.5, alpha=0.5, fp16=True, num_workers=4, output_dir='./distill_kd_output', save_steps=100)
+2026-05-01 12:16:16,651 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:16,856 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:17,189 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:17,267 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:18,012 - INFO - HTTP Request: GET https://hf-mirror.com/api/models/HuggingFaceTB/SmolLM-135M/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:18,666 - INFO - HTTP Request: GET https://hf-mirror.com/api/models/HuggingFaceTB/SmolLM-135M/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-01 12:16:18,805 - INFO - 👨‍🏫 加载教师模型...
+2026-05-01 12:16:20,713 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:20,794 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:21,618 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:21,742 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:23,988 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:24,112 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/generation_config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:24,264 - INFO - ✅ 教师模型加载完成
+2026-05-01 12:16:24,265 - INFO - 🧑‍🎓 加载学生模型（基座）...
+2026-05-01 12:16:24,581 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:24,707 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:24,997 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:25,099 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:26,034 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:26,284 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/generation_config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:26,294 - INFO - ✅ 学生模型加载完成（可训练）
+2026-05-01 12:16:26,294 - INFO - 📚 加载数据集: yahma/alpaca-cleaned
+2026-05-01 12:16:26,580 - INFO - HTTP Request: HEAD https://hf-mirror.com/datasets/yahma/alpaca-cleaned/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:26,697 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/datasets/yahma/alpaca-cleaned/12567cabf869d7c92e573c7c783905fc160e9639/README.md "HTTP/1.1 200 OK"
+2026-05-01 12:16:27,408 - INFO - HTTP Request: HEAD https://hf-mirror.com/datasets/yahma/alpaca-cleaned/resolve/12567cabf869d7c92e573c7c783905fc160e9639/alpaca-cleaned.py "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:28,122 - INFO - HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/yahma/alpaca-cleaned/yahma/alpaca-cleaned.py "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:28,278 - INFO - HTTP Request: GET https://hf-mirror.com/api/datasets/yahma/alpaca-cleaned/revision/12567cabf869d7c92e573c7c783905fc160e9639 "HTTP/1.1 200 OK"
+2026-05-01 12:16:28,563 - INFO - HTTP Request: HEAD https://hf-mirror.com/datasets/yahma/alpaca-cleaned/resolve/12567cabf869d7c92e573c7c783905fc160e9639/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:28,914 - INFO - HTTP Request: GET https://hf-mirror.com/api/datasets/yahma/alpaca-cleaned/tree/12567cabf869d7c92e573c7c783905fc160e9639/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:29,020 - INFO - HTTP Request: GET https://hf-mirror.com/api/datasets/yahma/alpaca-cleaned/tree/12567cabf869d7c92e573c7c783905fc160e9639?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-05-01 12:16:30,202 - INFO - HTTP Request: HEAD https://hf-mirror.com/datasets/yahma/alpaca-cleaned/resolve/12567cabf869d7c92e573c7c783905fc160e9639/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:30,295 - INFO - 📝 使用 1000 个样本进行训练
+2026-05-01 12:16:31,264 - INFO - ✅ 数据准备完成 - 训练集: 900 | 验证集: 100
+2026-05-01 12:16:31,266 - INFO - 
+🔥 开始知识蒸馏 (alpha=0.5, T=1.5)
+2026-05-01 12:16:32,418 - ERROR - 训练过程中出错: Attempting to unscale FP16 gradients.
+Traceback (most recent call last):
+  File "/root/lab2/distill_kd.py", line 491, in <module>
+    main()
+  File "/root/lab2/distill_kd.py", line 405, in main
+    scaler.unscale_(optimizer)
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 343, in unscale_
+    optimizer_state["found_inf_per_device"] = self._unscale_grads_(
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 261, in _unscale_grads_
+    raise ValueError("Attempting to unscale FP16 gradients.")
+ValueError: Attempting to unscale FP16 gradients.
+2026-05-01 12:16:38,333 - INFO - 🚀 训练设备: cuda
+2026-05-01 12:16:38,333 - INFO - 📌 训练参数: Namespace(teacher_preset='standard', teacher_lora_path='./lora_weights.pt', model_name='HuggingFaceTB/SmolLM-135M', dataset_name='yahma/alpaca-cleaned', max_samples=200, max_length=256, batch_size=1, learning_rate=1e-05, num_epochs=3, temperature=2.0, alpha=0.6, fp16=False, num_workers=0, output_dir='./my_distill_output', save_steps=50)
+2026-05-01 12:16:38,764 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:38,858 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:42,601 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:42,687 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:42,793 - INFO - HTTP Request: GET https://hf-mirror.com/api/models/HuggingFaceTB/SmolLM-135M/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-01 12:16:43,222 - INFO - HTTP Request: GET https://hf-mirror.com/api/models/HuggingFaceTB/SmolLM-135M/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-01 12:16:43,391 - INFO - 👨‍🏫 加载教师模型...
+2026-05-01 12:16:47,482 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:47,555 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:49,287 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:49,389 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:53,851 - INFO - HTTP Request: HEAD https://hf-mirror.com/HuggingFaceTB/SmolLM-135M/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-01 12:16:54,042 - INFO - HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/HuggingFaceTB/SmolLM-135M/1d461723eec654e65efdc40cf49301c89c0c92f4/generation_config.json "HTTP/1.1 200 OK"
+2026-05-01 12:16:54,097 - ERROR - 加载教师LoRA权重失败: [Errno 2] No such file or directory: './lora_weights.pt'
+2026-05-01 12:16:54,097 - ERROR - 训练过程中出错: [Errno 2] No such file or directory: './lora_weights.pt'
+Traceback (most recent call last):
+  File "/root/lab2/distill_kd.py", line 491, in <module>
+    main()
+  File "/root/lab2/distill_kd.py", line 345, in main
+    teacher = load_teacher(args, device)
+  File "/root/lab2/distill_kd.py", line 168, in load_teacher
+    lora_state = torch.load(args.teacher_lora_path, map_location=device)
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/torch/serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './lora_weights.pt'

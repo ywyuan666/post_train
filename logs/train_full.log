@@ -1,0 +1,151 @@
+nohup: ignoring input
+`torch_dtype` is deprecated! Use `dtype` instead!
+🚀 设备: cuda
+📦 加载模型: HuggingFaceTB/SmolLM-135M
+Loading weights:   0%|                                                                                                    | 0/272 [00:00<?, ?it/s]Loading weights:  42%|█████████████████████████████████████▋                                                   | 115/272 [00:00<00:00, 834.98it/s]Loading weights:  76%|███████████████████████████████████████████████████████████████████▋                     | 207/272 [00:00<00:00, 876.60it/s]Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████| 272/272 [00:00<00:00, 1082.84it/s]
+🎯 策略: standard -> 目标模块: ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+✅ 已替换: model.layers.0.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.0.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.0.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.0.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.1.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.1.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.1.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.1.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.2.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.2.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.2.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.2.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.3.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.3.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.3.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.3.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.4.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.4.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.4.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.4.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.5.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.5.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.5.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.5.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.6.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.6.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.6.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.6.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.7.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.7.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.7.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.7.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.8.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.8.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.8.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.8.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.9.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.9.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.9.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.9.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.10.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.10.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.10.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.10.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.11.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.11.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.11.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.11.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.12.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.12.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.12.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.12.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.13.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.13.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.13.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.13.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.14.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.14.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.14.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.14.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.15.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.15.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.15.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.15.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.16.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.16.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.16.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.16.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.17.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.17.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.17.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.17.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.18.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.18.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.18.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.18.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.19.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.19.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.19.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.19.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.20.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.20.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.20.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.20.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.21.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.21.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.21.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.21.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.22.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.22.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.22.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.22.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.23.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.23.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.23.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.23.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.24.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.24.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.24.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.24.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.25.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.25.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.25.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.25.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.26.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.26.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.26.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.26.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.27.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.27.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.27.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.27.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.28.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.28.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.28.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.28.self_attn.o_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.29.self_attn.q_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.29.self_attn.k_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.29.self_attn.v_proj -> LoRALinear(r=8)
+✅ 已替换: model.layers.29.self_attn.o_proj -> LoRALinear(r=8)
+
+📊 共替换 120 个线性层
+📊 可训练参数: 921,600 / 135,436,608 (0.68%)
+📚 数据集: yahma/alpaca-cleaned (取前 -1 条)
+Map:   0%|                                                                                                       | 0/51760 [00:00<?, ? examples/s]Map:   0%|                                                                                                       | 0/51760 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "/root/lab2/train_lora_strategies.py", line 263, in <module>
+    main()
+  File "/root/lab2/train_lora_strategies.py", line 219, in main
+    dataset = dataset.map(
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 574, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3632, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3997, in _map_single
+    for i, batch in iter_outputs(shard_iterable):
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3950, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+  File "/root/miniconda3/envs/lab2/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3871, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/root/lab2/train_lora_strategies.py", line 220, in <lambda>
+    lambda x: tokenize_function(x, tokenizer, args.max_length),
+  File "/root/lab2/train_lora_strategies.py", line 69, in tokenize_function
+    max_length=args.max_length, #add args.
+NameError: name 'args' is not defined
